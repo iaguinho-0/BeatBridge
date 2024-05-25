@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Open Sans', 'sanser if';
+    }
+
+    body{
+        font-family: "Open Sans", sans-serif;
+        background-image: linear-gradient(to bottom, rgba(92, 49, 197, 1), rgba(26, 12, 42, 1));
+    }
+
+    a{
+        text-decoration: none !important;
+    }
+
+   h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: aliceblue; 
+}
+
+p{
+    font-weight: 200;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+    h1{
+        font-weight: 800;
+        font-size: 60px;
+    }
+
+    /* Nav */
+    .navB-content {
+        display: flex;
+        background-color: #1A0C2A;
+        justify-content: center;
+    }
+
+    .nav__bar{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        height: 5em;
+    }
+
+    .text-nav {
+        display: flex;
+        color: aliceblue;
+        text-decoration: none;
+        justify-content: center;
+        font-weight: 400;
+        transition: .5s;
+    }
+
+    .text-nav:hover{
+        color: #6827FE;
+    }
+    
+    /* Nav */
+
+    /* box-home */
+    .box-1{
+        margin: 60px 20%;
+    }
+
+    .box-1 > h1{
+        font-weight: 800;
+        font-size: 60px;
+        margin: -15px auto;
+        color: white;
+    }
+
+    .box-1 > p{
+        font-weight: 300;
+        font-size: 25px;
+        color: white;
+    }
+
+    .box-1 > img{
+        width: 50vw;
+        max-width: 265px;
+    }
+
+
+    .botao1{
+        display: flex;
+        margin: 40px auto;
+        font-size: 20px;
+        color: white;
+        border-radius: 8px;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+    }
+
+    .box-2{ 
+        width: 50%;
+        margin: 0 15%;
+
+    }
+
+    .box-2>img{
+        max-width: 270px;
+        min-width: 150px;
+        width: 15vw;
+    }
+        /* box-home */
+
+
+    /* O QUE FAZ O PLAYLIST? */
+
+    .experience_section .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .detail-box{
+        margin: 0 10%;
+    }
+    
+    .experience_section .detail-box p {
+        margin-top: 20px;
+    }
+    
+    
+    
+    .experience_section .detail-box .btn-box a {
+        text-align: center;
+        width: 165px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+
+    
+    .experience_section .img-box img {
+        width: 100%;
+    }
+
+    .layout_padding {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    /* O QUE FAZ O PLAYLIST? */
+
