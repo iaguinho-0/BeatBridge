@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Open Sans', 'sanser if';
+        }
+
+        body{
+            font-family: "Open Sans", sans-serif;
+            background-image: linear-gradient(to bottom, rgba(92, 49, 197, 1), rgba(26, 12, 42, 1));
+            height: 2000px;
+        }
+
+        .nav-content {
+            display: flex;
+            background-color: #1A0C2A;
+            justify-content: center;
+        }
+
+        .nav__bar{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            height: 5em;
+        }
+
+        .text-nav {
+            display: flex;
+            color: aliceblue;
+            text-decoration: none;
+            justify-content: center;
+            font-weight: 400;
+            transition: .5s;
+        }
+
+        .text-nav:hover{
+            color: #6827FE;
+        }
+
+        .box-1{
+            margin: 20%;
+        }
+
+        .box-1 > h1{
+            font-weight: 800;
+            font-size: 60px;
+            margin: -15px auto;
+            color: white;
+        }
+
+        .box-1 > p{
+            font-weight: 300;
+            font-size: 25px;
+            color: white;
+        }
+
+        .box-1 > img{
+            width: 50vw;
+            max-width: 265px;
+        }
+
+
+        .botao1{
+            font-size: 20px;
+            align-items: center;
+            color: white;
+            border-radius: 8px;
+            border: 3px solid #6827FE;
+            text-decoration: none;
+            background-color: #6827FE;
+            padding: 3px 20px;
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-content">
+         <nav class="nav__bar">
+             <a class="text-nav" href="#">Transferir</a>
+             <a class="text-nav" href="#">IA de Playlist</a>
+             <a class="text-nav" href="#">Comentários</a>
+             <a class="text-nav" href="#">Sobre nós</a>
+             <a class="text-nav" href="#">Planos</a>
+             <a class="text-nav" href="#">Assinatura</a>
+         </nav>
+       </div>
+     </header>
+
+    <div class="box-1">
+        <h1>Suas Músicas</h1>  
+        <h1>Sempre ao Seu Alcance</h1>
+        <p>Converta e gerencie suas playlists de maneira rápida e fácil entre diferentes serviços de streaming. Desfrute de sua música favorita sem interrupções, onde quer que você esteja.</p>
+
+        <img src="images/gamer.png" alt="img1_gamer">
+        <img src="images/casal.png" alt="img2_casal">
+        <img src="images/menina.png" alt="img3_menina">
+        <img src="images/moca.png" alt="img4_moca"> 
+    </div>
+
+    <a href="#" class="botao1">Converta Sua Playlist Agora</a>
+</body>
+</html>
