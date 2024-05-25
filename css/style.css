@@ -22,11 +22,11 @@
     color: aliceblue; 
 }
 
-p{
-    font-weight: 200;
-    font-size: 25px;
-    color: aliceblue;
-}
+    p{
+        font-weight: 200;
+        font-size: 25px;
+        color: aliceblue;
+    }
 
     h1{
         font-weight: 800;
@@ -74,7 +74,8 @@ p{
         color: white;
     }
 
-    .box-1 > p{
+    .box-1 > p{        
+        margin: 35px 0px;
         font-weight: 300;
         font-size: 25px;
         color: white;
