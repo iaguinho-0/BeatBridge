@@ -90,11 +90,18 @@ p{
         display: flex;
         margin: 40px auto;
         font-size: 20px;
+        font-weight: 700;
         color: white;
         border-radius: 8px;
         border: 3px solid #6827FE;
         background-color: #6827FE;
         padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao1:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
     }
 
     .box-2{ 
