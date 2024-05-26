@@ -10,7 +10,7 @@
     body{
         font-family: "Open Sans", sans-serif;
         background-image: linear-gradient(to bottom, rgba(92, 49, 197, 1), rgba(26, 12, 42, 1));
-        height: 3400px;
+        height: 100%;
     }
 
     a{
@@ -73,12 +73,13 @@
     }
 
     .box-1{
-        margin: 60px 20%;
+        margin:  60px 20%;
+        padding-top: 2rem;
     }
 
     .box-1 > h1{
         font-weight: 800;
-        font-size: 60px;
+        font-size: 50px;
         margin: -15px auto;
         color: white;
     }
@@ -94,7 +95,6 @@
         width: 50vw;
         max-width: 265px;
     }
-
 
     .botao1{
         display: flex;
@@ -143,9 +143,7 @@
     .experience_section .detail-box p {
         margin-top: 20px;
     }
-    
-    
-    
+
     .experience_section .detail-box .btn-box a {
         text-align: center;
         width: 165px;
@@ -153,10 +151,8 @@
         margin: 5px;
     }
     
-
-    
     .experience_section .img-box img {
-        width: 100%;
+        width: 80%;
     }
 
     .layout_padding {
@@ -177,9 +173,10 @@
     div.box-3 > p.avaliacao{
         background-color: rgba(26, 12, 42, 1);
         border-radius: 9px;
-        padding: 50px 90px;
+        padding: 3rem 1rem;
         text-align: center;
-        width: 25vw;
+        width: 30vw;
+        height: 32vh;
         box-shadow: 1px 8px 20px black;
     }
 
@@ -192,9 +189,10 @@
     div.box-4 > p.avaliacao{
         background-color: rgba(26, 12, 42, 1);
         border-radius: 9px;
-        padding: 50px 90px;
+        padding: 3rem 1rem;
         text-align: center;
-        width: 25vw;
+        width: 30vw;
+        height: 32vh;
         box-shadow: 1px 8px 20px black;
     }
 
@@ -209,3 +207,89 @@
         flex-direction: row;
         margin-bottom: 20px;
     }
+
+    .full-box{
+        margin-bottom: 10rem;
+    }
+
+    /* O JEITO MAIS FÁCIL DE TRANSFERIRPLAYLISTS */
+
+    .botao2{
+        display: flex;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao2:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
+    }
+      
+    .block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18rem; 
+    }
+
+      .box-text {
+        border-radius: 8px;
+        width: 760px;
+        height:45px
+      }
+
+     /* O JEITO MAIS FÁCIL DE TRANSFERIRPLAYLISTS */
+
+
+    /* FOOTER */
+
+    .footer{
+        margin-bottom: 3rem;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;;
+    }
+
+     .line{
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        width: 100%;
+        color: black;
+      }
+
+    .footer-content .p1{
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .footer-content .p2{
+        display: flex;
+        font-size: 16px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    /* FOOTER */
