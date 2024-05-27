@@ -241,8 +241,11 @@
 
       .box-text {
         border-radius: 8px;
-        width: 760px;
-        height:45px
+        width: 50vw;
+        max-width: 760px;
+        height:45px;
+        border: none;
+        padding-left: 15px;
       }
 
      /* O JEITO MAIS FÁCIL DE TRANSFERIRPLAYLISTS */
