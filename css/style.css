@@ -124,6 +124,13 @@
         max-width: 270px;
         min-width: 150px;
         width: 15vw;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .box-2:hover > :not(:hover){
+        opacity: .4;
+        transform: scale(0.9);
     }
         /* box-home */
 
@@ -294,5 +301,13 @@
         align-items: center;
         margin-bottom: 1rem;
     }
+
+    /*.icons a{
+        transition: .5s;
+    }
+
+    .icons a:hover{
+       background-color: #6827FE;
+    }*/
 
     /* FOOTER */
