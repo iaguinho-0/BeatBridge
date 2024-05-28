@@ -1,3 +1,19 @@
+<?php 
+  session_start();
+  include_once('config.php');
+
+  if((!isset($_SESSION['usuario']) == true)  and (!isset($_SESSION['senha']) == true)){
+      unset($_SESSION['usuario']); /*Destruir os dados*/ 
+      unset($_SESSION['senha']); 
+      header('Location: login.php');
+  }
+  $logado = $_SESSION['usuario'];
+
+  $sql = "SELECT * FROM usuarios ORDER BY id DESC";
+
+  $result = $conexao->query($sql);
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,7 +48,15 @@
                 <div class="sub-menu">
                     <div class="user-info">
                       <img src="icons/user.png" alt="User">
-                      <h2><a href="home.php" class="entrar">Entrar</a></h2>
+                       <!-- Tentativa de mostrar o nome do usuário logado se estiver logado, e se não estiver logado aparecer "Entrar". Só que tem que usar PHP, dps eu altero isso pra tornar funcional (by: iago)-->
+                      <?php
+                      if($logado != ""){
+                          echo "<h2>$logado</h2>";
+                        }/* else{
+                          echo "<h2><a href="sair.php" class="sub-menu-link">Entrar </a></h2>";
+                        } */
+                      ?>  
+
                     </div>
                     <hr>
                     <a href="#" class="sub-menu-link">
@@ -50,7 +74,7 @@
                       <p>Ajuda & Suporte</p>
                       <span>></span>
                     </a>
-                    <a href="#" class="sub-menu-link">
+                    <a href="sair.php" class="sub-menu-link">
                       <img src="icons/logout.png">
                       <p>Sair</p>
                       <span>></span>
