@@ -409,11 +409,13 @@
         display: flex;
         font-weight: 500;
         font-size: 16px;
+        margin-bottom: 5px;
     }
 
     .footer-content .p2{
         display: flex;
         font-size: 16px;
+        margin-bottom: 1rem;
     }
 
     .icons{
@@ -433,3 +435,76 @@
     }*/
 
     /* FOOTER */
+
+    /* ASSINATURA */
+
+    /* BODY */
+
+    .box-1 h1{
+        margin-bottom: 5px;
+    }
+
+    .box-1 .sec-text { 
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .box-model{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 10em;
+    }
+
+    .box-model-text {
+        border-radius: 1rem;
+        background-color: #fff;
+        max-width: 225px;
+    }
+
+    .box-model-text h2 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .box-model-text h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .box-model-text p {
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .dir{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .botao{
+        display: flex;
+        margin: 22px 0px 2px;
+        font-size: 12px;
+        font-weight: 800;
+        color: white;
+        border-radius: 2rem;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .text-sp{
+       margin-bottom: 12px;
+    }
+    
+    /* ASSINATURA */
