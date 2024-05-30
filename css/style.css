@@ -78,7 +78,7 @@
     .sub-menu-wrap{
         position: absolute;
         top: 9%;
-        right: 20vw;
+        right: 30vw;
         width: 320px;
         max-height: 0px; /*menu fechado*/
         overflow: hidden;
@@ -87,7 +87,7 @@
     /* Gambiarra pra responsividadeKKKK */
     @media (max-width: 1260px) {
         .sub-menu-wrap{
-            right: 16vw;
+            right: 26vw;
         }
     }
 
