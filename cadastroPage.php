@@ -37,10 +37,10 @@
   <header class="navB">
     <div class="navB-content">
       <nav class="nav__bar">
-          <a class="text-nav" href="#">Transferir</a>
-          <a class="text-nav" href="#">IA de Playlist</a>
-          <a class="text-nav" href="#">Comentários</a>
-          <a class="text-nav" href="#">Sobre nós</a>
+      <a class="text-nav" href="#converter">Transferir</a>
+              <a class="text-nav" href="index.html">IA de Playlist</a>
+              <a class="text-nav" href="index.html">Comentários</a>
+              <a class="text-nav" href="index.html">Sobre nós</a>
           <a class="text-nav" href="assiantura.html">Assinatura</a>
 
           <a class="text-nav2" href="#"><img class="user" src="icons/user.png" onclick="toggleMenu()" alt="User"></a>
@@ -50,7 +50,7 @@
             <div class="sub-menu">
                 <div class="user-info">
                   <img src="icons/user.png" alt="User">
-                  <h2><a href="home.php" class="entrar">Entrar</a></h2>
+                  <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
                 </div>
                 <hr>
                 <a href="#" class="sub-menu-link">
