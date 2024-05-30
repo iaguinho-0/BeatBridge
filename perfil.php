@@ -1,20 +1,19 @@
-<?php
-    if(isset($_POST['submit'])){
-      
-        
-        include_once('config.php');
+<?php 
+  session_start();
+  include_once('config.php');
 
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $usuario = $_POST['usuario'];
-        $senha = $_POST['senha'];
-        $cidade = $_POST['cidade'];
-        $estado = $_POST['estado'];
+  if((!isset($_SESSION['usuario']) == true)  and (!isset($_SESSION['senha']) == true)){
+      unset($_SESSION['usuario']); /*Destruir os dados*/ 
+      unset($_SESSION['senha']); 
+      header('Location: loginPage.php');
+  }
+  $logado = $_SESSION['usuario'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, usuario, senha, cidade, estado) VALUES ('$nome', '$email', '$usuario' ,'$senha', '$cidade', '$estado');");
+  /*$nomecompleto = $_SESSION['nome'];*/
 
-        header('Location: loginPage.php');
-    }
+  $sql = "SELECT * FROM usuarios ORDER BY id DESC";
+
+  $result = $conexao->query($sql);
 
 ?>
 
@@ -53,7 +52,7 @@
                   <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
                 </div>
                 <hr>
-                <a href="loginPage.php" class="sub-menu-link">
+                <a href="perfil.php" class="sub-menu-link">
                   <img src="icons/profile.png">
                   <p>Acessar Perfil</p>
                   <span>></span>
@@ -81,48 +80,26 @@
    </div>
  </header>
 
- <form action="cadastroPage.php" method="POST">
-     <section class="w-50  rounded-4 " style="height: 742px; margin: 10px auto 5%;  background: #FAF6FF;">
-      <div style="padding-left: 10vw; margin-top: 10vh;">
-  <div class="mb-3 ">
-  <h2 class="" style="color: #1A0C2A; padding-top: 5%; font-weight: bold; font-size:55px;">Cadastre</h2>
-  <h2 class="" style="color: #1A0C2A;  font-weight: bold; font-size:55px;">Sua Conta</h2>
+     <section class="w-50  rounded-4 " style="height: 65vh; margin: 10px auto 5%;  background: #FAF6FF;">
+      <div style="padding-left: 8%; margin-top: 8vh; padding-top: 6%;">
+    <div class="" style="">
+            <img src="icons/user02.png" alt="user" width="80px">
+            <input class="inputSubmit btn text-white" style=" width:40%; background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Mudar Foto">
+            <input class="inputSubmit btn text-white" style=" width:40%; background-color: #D9D9D9; font-weight: bold;" type="submit" name="submit" value="Apagar Foto">
+    </div>
+        </div>
+        <div class="mb-3 ">
+            <br>
+            <input type="text" class="form-control w-75 m-auto" name="nome" id="nome" class="inputUser" value="<?php echo $logado;?>" placeholder="Digite seu novo nome">
+            <br>
+            <input type="text" class="form-control w-75 m-auto" name="usuario" id="usuario" value="<?php echo $logado;?>" placeholder="@username">
+            <br>
+            <br>
 
-  
-</div>
-<div class="mb-3 ">
-  <br>
-  <input type="text" class="form-control w-75" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
-  <br>
-  <input type="text" class="form-control w-75" name="email" id="email" placeholder="E-mail" required>
-  <br>
-  <input type="text" class="form-control w-75" type="text" name="usuario" id="usuario"  placeholder="Usuário" required>
-  <br>
-  <input type="password" class="form-control w-75" name="senha" id="senha" placeholder="Senha" required>
-<br>
-
-<input type="text" name="cidade" id="cidade" class="form-control w-75"  placeholder="Cidade" required>
-<br>
-<input type="text" name="estado" id="estado" class="form-control w-75"  placeholder="Estado" required>
-<br>
-<div class="d-flex f-direction-row" style="gap: 7px;">
-  <p style="font-size: large; color: #000;">Já tem uma conta?</p>
-    <p style="font-size: large; color: #4285F4; "><a href="cadastroPage.php">Faça login aqui.</a></p>
-</div>
-
-</div> 
-
-
-
-<input class="inputSubmit btn w-75 text-white" style=" background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Login">
-
-
-</div> <!--fim perfil-box-->
-
-</div>
+            </div>
      </section>
-    </form>
 
+<!-- Footer -->
      <section class="footer">
         <div class="footer-content">
           <hr class="line">
