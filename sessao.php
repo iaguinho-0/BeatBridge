@@ -60,7 +60,7 @@
                     <hr>
                     <a href="#" class="sub-menu-link">
                       <img src="icons/profile.png">
-                      <p>Editar Perfil</p>
+                      <p>Acessar Perfil</p>
                       <span>></span>
                     </a>
                     <a href="#" class="sub-menu-link">
