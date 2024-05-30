@@ -104,7 +104,13 @@
             <div class="sub-menu">
                 <div class="user-info">
                   <img src="icons/user.png" alt="User">
-                  <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
+                  <?php
+                      if($logado != ""){
+                          echo "<h2>$logado</h2>";
+                        }/* else{
+                          echo "<h2><a href="sair.php" class="sub-menu-link">Entrar </a></h2>";
+                        } */
+                      ?>  
                 </div>
                 <hr>
                 <a href="perfilPage.php" class="sub-menu-link">
