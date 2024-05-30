@@ -107,7 +107,7 @@
                   <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
                 </div>
                 <hr>
-                <a href="perfil.php" class="sub-menu-link">
+                <a href="perfilPage.php" class="sub-menu-link">
                   <img src="icons/profile.png">
                   <p>Acessar Perfil</p>
                   <span>></span>
