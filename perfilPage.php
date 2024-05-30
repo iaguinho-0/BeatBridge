@@ -1,3 +1,19 @@
+<?php 
+  session_start();
+  include_once('config.php');
+  if((!isset($_SESSION['usuario']) == true)  and (!isset($_SESSION['senha']) == true)){
+      unset($_SESSION['usuario']); /*Destruir os dados*/ 
+      unset($_SESSION['senha']); 
+      header('Location: loginPage.php');
+  }
+  $logado = $_SESSION['usuario'];
+
+  $sql = "SELECT * FROM usuarios ORDER BY id DESC";
+
+  $result = $conexao->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -139,7 +155,7 @@
             <p class="text-black" style="padding-left: 13%;">USERNAME</p>
 
             <div class="d-flex flex-direction-row">
-            <input type="text" class="form-control w-50 " style="margin-left: 13%;" name="usuario" id="usuario" value="<?php echo $logado;?>" placeholder="@username">
+            <input type="text" class="form-control w-50 " style="margin-left: 13%;" name="usuario" id="usuario" value="@<?php echo $logado;?>" placeholder="@username">
             <input class="inputSubmit btn text-white " style=" width:20%; font-weight: bold; margin-left: 3%;background: #2CC27B;" type="submit" name="submit" value="Salvar">
             
         </div>
