@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro</title>
+    <title>Tela de Login</title>
     <link rel="shortcut icon" href="images/star.png">
 
 
@@ -30,7 +30,7 @@
             <div class="sub-menu">
                 <div class="user-info">
                   <img src="icons/user.png" alt="User">
-                  <h2><a href="home.php" class="entrar">Entrar</a></h2>
+                  <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
                 </div>
                 <hr>
                 <a href="#" class="sub-menu-link">
@@ -61,37 +61,23 @@
    </div>
  </header>
 
- <a href="home.php"><img src="images/home.png" style="width: 46px;margin: 15px;" alt="Voltar"></a> 
+ 
  <form action="testeLogin.php" method="POST">
-     <section class="w-50  rounded-4 " style="height: 742px; margin: 10px auto 5%;  background: #FAF6FF;">
+     <section class="w-50  rounded-4 " style="height: 442px; margin: 10px auto 5%;  background: #FAF6FF;">
       <div style="padding-left: 10vw; margin-top: 10vh;">
   <div class="mb-3 ">
-  <h2 class="" style="color: #1A0C2A; padding-top: 5%; font-weight: bold; font-size:55px;">Cadastre</h2>
-  <h2 class="" style="color: #1A0C2A;  font-weight: bold; font-size:55px;">Sua Conta</h2>
-
-  
+  <h2 class="" style="color: #1A0C2A; padding-top: 10%; font-weight: bold; font-size:55px;">Login</h2>
+  <input type="text" class="form-control w-75" name="usuario" id="formGroupExampleInput" placeholder="Usuário">
 </div>
-<div class="mb-3 ">
-  <br>
-  <input type="text" class="form-control w-75" name="nome" id="nome" class="inputUser" required placeholder="Nome Completo">
-  <br>
-  <input type="text" class="form-control w-75" name="email" id="email" placeholder="E-mail">
-  <br>
-  <input type="text" class="form-control w-75" type="text" name="usuario" id="usuario"  placeholder="Usuário">
-  <br>
-  <input type="password" class="form-control w-75" name="senha" id="senha" placeholder="Senha">
-<br>
-
-<input type="text" name="cidade" id="cidade" class="form-control w-75"  placeholder="Cidade" required>
-<br>
-<input type="text" name="estado" id="estado" class="form-control w-75"  placeholder="Estado" required>
-<br>
-
+<div class="mb-3">
+ 
+  <input type="password" class="form-control w-75" name="senha" id="formGroupExampleInput2" placeholder="Senha">
 </div>
-
-
-
-<input class="inputSubmit btn w-75 text-white" style=" background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Login">
+<div class="d-flex f-direction-row" style="gap: 7px;">
+  <p style="font-size: large; color: #000;">Nao tem conta?</p>
+    <p style="font-size: large; color: #4285F4; "><a href="cadastroPage.php">Registre-se aqui.</a></p>
+</div>
+<input class="inputSubmit btn w-75 text-white" style=" background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Enviar">
 
 </div>
      </section>

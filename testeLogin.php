@@ -15,15 +15,15 @@
         if(mysqli_num_rows($result) < 1) { 
             unset($_SESSION['usuario']); /*Destruir os dados caso não tenhamos no nosso Data Base*/ 
             unset($_SESSION['senha']);
-            header('Location: login.php');
+            header('Location: loginPage.php');
         }else{
             $_SESSION ['usuario'] = $usuario; /* Efetuar login e direcionar para a página "sistema.php" */
             $_SESSION ['senha'] = $senha;
-            header('Location: dentro.php');
+            header('Location: sessao.php');
         }
 
     }else{
         //Não Acessa
-        header('Location: login.php');
+        header('Location: loginPage.php');
     }
 ?>

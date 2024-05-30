@@ -5,7 +5,7 @@
   if((!isset($_SESSION['usuario']) == true)  and (!isset($_SESSION['senha']) == true)){
       unset($_SESSION['usuario']); /*Destruir os dados*/ 
       unset($_SESSION['senha']); 
-      header('Location: login.php');
+      header('Location: loginPage.php');
   }
   $logado = $_SESSION['usuario'];
 
