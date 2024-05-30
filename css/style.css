@@ -508,3 +508,126 @@
     }
     
     /* ASSINATURA */
+    
+    /* PAGAMENTO */
+
+    .body-pag{
+        margin-right: 10%;
+    }
+
+    .content-pag{
+        display: flex;
+        background-color: #ffffff;
+        margin: 10rem 10rem;
+        border-radius: 1em;
+    }
+
+    .org{ 
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 5rem;
+        gap: 10px;
+    }
+
+    .org h1{
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .org h2{
+        font-size: 20px;
+        font-weight: 200;
+        color: #5F8670;
+    }
+
+    .porr{
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .mer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao3:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
+    }
+
+    .dropdown{ 
+        font-weight: 400;
+        display: flex !important;
+        align-items: center !important;
+        text-decoration: none;
+        color: #fff !important;
+        margin: 12px 0;
+    }
+
+    .div-icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-text{
+        color: #ccc;
+    }
+
+    .select-menu{
+        width: 280px;
+    }    
+
+    .select-menu .select-btn{
+        display: flex;
+        height: 60px;
+       
+        background: #ffff;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .select-menu .options{
+        position: relative;
+        background-color: #ffff;
+        border-radius: 1rem;
+        padding: 20px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .select-menu.active .options{
+        display: block;
+    }
+
+    .options .option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 16px;
+        height: 45px;
+        border-radius: 1rem;
+    }
+
+    .options .option:hover{
+        background-color: #f2f2f2;
+    }
+
+    /* PAGAMENTO */
