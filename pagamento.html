@@ -16,9 +16,9 @@
     <header class="navB">
         <div class="navB-content">
           <nav class="nav__bar">
-              <a class="text-nav" href="#">Transferir</a>
-              <a class="text-nav" href="#">IA de Playlist</a>
-              <a class="text-nav" href="#">Comentários</a>
+              <a class="text-nav" href="index.html">Transferir</a>
+              <a class="text-nav" href="index.html">IA de Playlist</a>
+              <a class="text-nav" href="index.html">Comentários</a>
               <a class="text-nav" href="index.html">Sobre nós</a>
               <a class="text-nav" href="assiantura.html">Assinatura</a>
 
@@ -29,10 +29,10 @@
                 <div class="sub-menu">
                     <div class="user-info">
                       <img src="icons/user.png" alt="User">
-                      <h2><a href="home.php" class="entrar">Entrar</a></h2>
+                      <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
                     </div>
                     <hr>
-                    <a href="#" class="sub-menu-link">
+                    <a href="loginPage.php" class="sub-menu-link">
                       <img src="icons/profile.png">
                       <p>Editar Perfil</p>
                       <span>></span>
@@ -53,8 +53,8 @@
                       <span>></span>
                     </a>
                 </div>
-                <!-- FIM - Menu DropDown -->
              </div>
+                  <!-- FIM - Menu DropDown -->
 
           </nav>
        </div>
@@ -126,7 +126,17 @@
           <p class="p2">© 2024 Playlist. Todos os direitos reservados.</p>
         </div>
        </section>
-    <!-- Função para abrir o menu. Lá encima o botão tem um "onclick", o qual puxa essa função-->
+    
+         <!-- Função para abrir o menu Dropdown Nav.-->
+         <script>
+          let subMenu = document.getElementById("subMenu");
+      
+          function toggleMenu(){
+            subMenu.classList.toggle("open-menu");/* Basicamente chama essa classe la no CSS, o qual faz aparecer o "menu" */
+          }
+         </script>
+          <!-- Função para abrir o menu Dropdown Nav.-->
+
    <script src="css/bootstrap/js/script.js">
    </script>
 </body>

@@ -10,11 +10,48 @@
     <header class="navB">
         <div class="navB-content">
          <nav class="nav__bar">
-          <a class="text-nav" href="#converter">Transferir</a>
+          <a class="text-nav" href="index.html">Transferir</a>
           <a class="text-nav" href="index.html">IA de Playlist</a>
           <a class="text-nav" href="index.html">Comentários</a>
           <a class="text-nav" href="index.html">Sobre nós</a>
-             <a class="text-nav" href="#">Assinatura</a>
+             <a class="text-nav" href="assiantura.html">Assinatura</a>
+
+             <a class="text-nav2" href="#"><img class="user" src="icons/user.png" onclick="toggleMenu()" alt="User"></a>
+
+             <!-- Menu DropDown -->
+           <div class="sub-menu-wrap" id="subMenu">
+               <div class="sub-menu">
+                   <div class="user-info">
+                     <img src="icons/user.png" alt="User">
+                     <h2><a href="loginPage.php" class="entrar">Entrar</a></h2>
+                   </div>
+                   <hr>
+                   <a href="loginPage.php" class="sub-menu-link">
+                     <img src="icons/profile.png">
+                     <p>Acessar Perfil</p>
+                     <span>></span>
+                   </a>
+                   <a href="#" class="sub-menu-link">
+                     <img src="icons/setting.png">
+                     <p>Configurações</p>
+                     <span>></span>
+                   </a>
+                   <a href="#" class="sub-menu-link">
+                     <img src="icons/help.png">
+                     <p>Ajuda & Suporte</p>
+                     <span>></span>
+                   </a>
+                   <a href="#" class="sub-menu-link">
+                     <img src="icons/logout.png">
+                     <p>Sair</p>
+                     <span>></span>
+                   </a>
+               </div>
+            </div>
+              <!-- FIM - Menu DropDown -->
+
+
+
          </nav>
        </div>
      </header>
@@ -34,7 +71,7 @@
               <p>• Conversão de playlists com até 100 músicas</p>
               <p>• Suporte para os principais serviços de streaming</p>
               <p>• Proteção dos dados com tecnologias de segurança</p>
-              <a href="#"><bottom class="botao">Assinar</bottom></a>
+              <a href="pagamento.html"><bottom class="botao">Assinar</bottom></a>
              </div>
             </div>
           
@@ -46,7 +83,7 @@
               <p>• Conversão ilimitada de músicas</p>
               <p>• Sincronização automática de playlists</p>
               <p>• Atendimento prioritário ao cliente.</p>
-              <a href="#"><bottom class="botao">Assinar</bottom></a>
+              <a href="pagamento.html"><bottom class="botao">Assinar</bottom></a>
             </div>
         </div>
 
@@ -58,7 +95,7 @@
               <p>• Todos os benefícios do Plano Básico.</p>
               <p>• Conversão de playlists com até 10.000 músicas.</p>
               <p>• Experiência sem anúncios.</p>
-              <a href="#"><bottom class="botao">Assinar</bottom></a>
+              <a href="pagamento.html"><bottom class="botao">Assinar</bottom></a>
             </div>
         </div>
 
@@ -70,7 +107,7 @@
               <p>• Todos os benefícios do Plano Premium</p>
               <p>• Até 6 contas individuais.</p>
               <p>• Controle parental para playlists.</p>
-              <a href="#"><bottom class="botao">Assinar</bottom></a>
+              <a href="pagamento.html"><bottom class="botao">Assinar</bottom></a>
             </div>
         </div>
         </section>
@@ -93,5 +130,14 @@
           <p class="p2">© 2024 Playlist. Todos os direitos reservados.</p>
         </div>
        </section>
+        <!-- Função para abrir o menu Dropdown Nav.-->
+   <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");/* Basicamente chama essa classe la no CSS, o qual faz aparecer o "menu" */
+    }
+   </script>
+    <!-- Função para abrir o menu Dropdown Nav.-->
 </body>
 </html>

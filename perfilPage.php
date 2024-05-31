@@ -92,9 +92,9 @@
     <div class="navB-content">
       <nav class="nav__bar">
       <a class="text-nav" href="sessao.php">Transferir</a>
-              <a class="text-nav" href="index.html">IA de Playlist</a>
-              <a class="text-nav" href="index.html">Comentários</a>
-              <a class="text-nav" href="index.html">Sobre nós</a>
+              <a class="text-nav" href="sessao.php">IA de Playlist</a>
+              <a class="text-nav" href="sessao.php">Comentários</a>
+              <a class="text-nav" href="sessao.php">Sobre nós</a>
           <a class="text-nav" href="assiantura.html">Assinatura</a>
 
           <a class="text-nav2" href="#"><img class="user" src="icons/user.png" onclick="toggleMenu()" alt="User"></a>

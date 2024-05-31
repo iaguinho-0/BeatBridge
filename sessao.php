@@ -35,10 +35,10 @@
         <div class="navB-content">
           <nav class="nav__bar">
           <a class="text-nav" href="#converter">Transferir</a>
-              <a class="text-nav" href="index.html">IA de Playlist</a>
-              <a class="text-nav" href="index.html">Comentários</a>
-              <a class="text-nav" href="index.html">Sobre nós</a>
-              <a class="text-nav" href="#">Assinatura</a>
+              <a class="text-nav" href="sessao.php">IA de Playlist</a>
+              <a class="text-nav" href="sessao.php">Comentários</a>
+              <a class="text-nav" href="sessao.php">Sobre nós</a>
+              <a class="text-nav" href="assiantura.html">Assinatura</a>
 
               <a class="text-nav2" href="#"><img class="user" src="icons/user.png" onclick="toggleMenu()" alt="User"></a>
 
@@ -115,11 +115,11 @@
                      O QUE FAZ 
                   </h1>
                   <h1  style="font-weight: bold;">
-                    O PLAYLIST?
+                  O BeatBridge?
                  </h1>
                 </div>
                 <p >
-                    O Playlist oferece uma solução completa para a conversão de playlists, permitindo que você transfira suas músicas favoritas entre diferentes serviços de streaming com apenas alguns cliques. suporte para plataformas como Spotify, Apple Music, YouTube Music e muitas outras, você tem a flexibilidade de ouvir suas músicas onde e quando quiser. 
+                O BeatBridge oferece uma solução completa para a conversão de playlists, permitindo que você transfira suas músicas favoritas entre diferentes serviços de streaming com apenas alguns cliques. suporte para plataformas como Spotify, Apple Music, YouTube Music e muitas outras, você tem a flexibilidade de ouvir suas músicas onde e quando quiser. 
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@
    </div>
   </section>
 
-  <section class="full-box2">
+  <section class="full-box2" id="converter" >
    <div class="box-1">
     <h1>O Jeito Mais Fácil</h1>
     <h1>De Transferir Suas Playlists</h1>

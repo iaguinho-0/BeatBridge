@@ -17,7 +17,7 @@
   <header class="navB">
     <div class="navB-content">
       <nav class="nav__bar">
-      <a class="text-nav" href="#converter">Transferir</a>
+      <a class="text-nav" href="index.html">Transferir</a>
               <a class="text-nav" href="index.html">IA de Playlist</a>
               <a class="text-nav" href="index.html">Comentários</a>
               <a class="text-nav" href="index.html">Sobre nós</a>
@@ -77,7 +77,7 @@
   <p style="font-size: large; color: #000;">Nao tem conta?</p>
     <p style="font-size: large; color: #4285F4; "><a href="cadastroPage.php">Registre-se aqui.</a></p>
 </div>
-<input class="inputSubmit btn w-75 text-white" style=" background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Enviar">
+<input class="inputSubmit btn w-75 text-white" style=" background-color: #6827FE; font-weight: bold;" type="submit" name="submit" value="Login">
 
 </div>
      </section>
