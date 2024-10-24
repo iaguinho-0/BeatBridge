@@ -9,6 +9,8 @@
 
 O site está hospedado  e pode ser acessado através do seguinte link: [Beatbridge](https://beatbridge-gg.lovestoblog.com).
 
+![image](https://github.com/user-attachments/assets/aaeb3fd8-4d35-47fd-b378-3e24fe9f6ec1)
+
 
 ## Tecnologias Utilizadas
 
@@ -20,3 +22,5 @@ O site está hospedado  e pode ser acessado através do seguinte link: [Beatbrid
 ## Equipe de Desenvolvimento
 
 - [Mangabattis](https://github.com/orgs/Mangabattis/people)
+
+
